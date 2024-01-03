@@ -157,7 +157,7 @@ if __name__ == "__main__":
                                                                        "Expects a .pt format")
     parser.add_argument("--truncation", type=float, default=0.7, help="used only for the initial latent vector, and only when a latent code path is"
                                                                       "not provided")
-    parser.add_argument("--save_intermediate_image_every", type=int, default=20, help="if > 0 then saves intermidate results during the optimization")
+    parser.add_argument("--save_intermediate_image_every", type=int, default=100, help="if > 0 then saves intermidate results during the optimization")
     parser.add_argument("--results_dir", type=str, default="results")
     parser.add_argument("--adaptive_layer_masking", type=bool, default=False)
     parser.add_argument("--save_latent_path", type=str, default=None)

@@ -39,7 +39,7 @@ class SoundCLIPLoss(torch.nn.Module):
 
         self.audio_encoder = AudioEncoder()
         
-        self.audio_encoder.load_state_dict(copyStateDict(torch.load("./pretrained_models/resnet18.pth")))
+        self.audio_encoder.load_state_dict(copyStateDict(torch.load("./pretrained_models/resnet18_57.pth")))
         
         self.audio_encoder = self.audio_encoder.cuda()
         self.audio_encoder.eval()
